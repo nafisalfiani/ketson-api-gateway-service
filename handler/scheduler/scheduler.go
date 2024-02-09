@@ -1,0 +1,51 @@
+package scheduler
+
+import (
+	"context"
+
+	"github.com/nafisalfiani/ketson-go-lib/auth"
+	"github.com/nafisalfiani/ketson-go-lib/log"
+	"github.com/nafisalfiani/ketson-go-lib/scheduler"
+	"github.com/nafisalfiani/p3-final-project/api-gateway-service/usecase"
+)
+
+type Config struct {
+	HelloWorld scheduler.TaskConf
+}
+
+type Interface interface {
+	Run()
+	TriggerScheduler(name string) error
+}
+
+type schedule struct {
+	scheduler scheduler.Interface
+	log       log.Interface
+	uc        *usecase.Usecases
+}
+
+func Init(conf Config, log log.Interface, auth auth.Interface, uc *usecase.Usecases) Interface {
+	s := &schedule{
+		scheduler: scheduler.Init(log, auth),
+		log:       log,
+		uc:        uc,
+	}
+
+	s.scheduler.AssignTask(conf.HelloWorld, s.HelloWorld)
+
+	return s
+}
+
+func (s *schedule) Run() {
+	s.scheduler.Run()
+}
+
+func (s *schedule) TriggerScheduler(name string) error {
+	return s.scheduler.TriggerScheduler(name)
+}
+
+func (s *schedule) HelloWorld(ctx context.Context) error {
+	s.log.Info(ctx, "Hello, 世界!")
+
+	return nil
+}
