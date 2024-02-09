@@ -1,10 +1,10 @@
 package config
 
 import (
-	"github.com/nafisalfiani/ketson-go-lib/auth"
-	"github.com/nafisalfiani/ketson-go-lib/broker"
-	"github.com/nafisalfiani/ketson-go-lib/log"
-	"github.com/nafisalfiani/ketson-go-lib/security"
+	"github.com/nafisalfiani/ketson-api-gateway-service/lib/auth"
+	"github.com/nafisalfiani/ketson-api-gateway-service/lib/broker"
+	"github.com/nafisalfiani/ketson-api-gateway-service/lib/log"
+	"github.com/nafisalfiani/ketson-api-gateway-service/lib/security"
 	"github.com/nafisalfiani/p3-final-project/api-gateway-service/handler/rest"
 	"github.com/nafisalfiani/p3-final-project/api-gateway-service/handler/scheduler"
 	"github.com/nafisalfiani/p3-final-project/api-gateway-service/usecase"

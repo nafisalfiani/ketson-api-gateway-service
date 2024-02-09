@@ -7,7 +7,7 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 
-	"github.com/nafisalfiani/ketson-go-lib/log"
+	"github.com/nafisalfiani/ketson-api-gateway-service/lib/log"
 	"github.com/nafisalfiani/ketson-product-service/handler/grpc/ticket"
 	"github.com/nafisalfiani/ketson-transaction-service/handler/grpc/transaction"
 	"github.com/nafisalfiani/ketson-transaction-service/handler/grpc/wallet"

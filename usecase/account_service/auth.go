@@ -3,8 +3,8 @@ package accountservice
 import (
 	"context"
 
-	"github.com/nafisalfiani/ketson-account-service/handler/grpc/auth"
-	"github.com/nafisalfiani/ketson-account-service/handler/grpc/user"
+	"github.com/nafisalfiani/ketson-api-gateway-service/handler/grpc/auth"
+	"github.com/nafisalfiani/ketson-api-gateway-service/handler/grpc/user"
 	"github.com/nafisalfiani/p3-final-project/api-gateway-service/entity"
 )
 

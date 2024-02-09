@@ -7,9 +7,9 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 
-	"github.com/nafisalfiani/ketson-account-service/handler/grpc/auth"
-	"github.com/nafisalfiani/ketson-account-service/handler/grpc/user"
-	"github.com/nafisalfiani/ketson-go-lib/log"
+	"github.com/nafisalfiani/ketson-api-gateway-service/handler/grpc/auth"
+	"github.com/nafisalfiani/ketson-api-gateway-service/handler/grpc/user"
+	"github.com/nafisalfiani/ketson-api-gateway-service/lib/log"
 	"github.com/nafisalfiani/p3-final-project/api-gateway-service/entity"
 )
 

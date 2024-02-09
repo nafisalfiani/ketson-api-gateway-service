@@ -2,8 +2,8 @@ package usecase
 
 import (
 	"github.com/go-playground/validator/v10"
-	"github.com/nafisalfiani/ketson-go-lib/auth"
-	"github.com/nafisalfiani/ketson-go-lib/log"
+	"github.com/nafisalfiani/ketson-api-gateway-service/lib/auth"
+	"github.com/nafisalfiani/ketson-api-gateway-service/lib/log"
 	"github.com/nafisalfiani/p3-final-project/api-gateway-service/domain"
 	accountservice "github.com/nafisalfiani/p3-final-project/api-gateway-service/usecase/account_service"
 	productservice "github.com/nafisalfiani/p3-final-project/api-gateway-service/usecase/product_service"

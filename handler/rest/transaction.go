@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/nafisalfiani/ketson-go-lib/codes"
+	"github.com/nafisalfiani/ketson-api-gateway-service/lib/codes"
 	"github.com/nafisalfiani/p3-final-project/api-gateway-service/entity"
 )
 

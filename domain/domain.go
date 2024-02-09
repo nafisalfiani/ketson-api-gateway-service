@@ -1,7 +1,7 @@
 package domain
 
 import (
-	"github.com/nafisalfiani/ketson-go-lib/log"
+	"github.com/nafisalfiani/ketson-api-gateway-service/lib/log"
 )
 
 type Domains struct {

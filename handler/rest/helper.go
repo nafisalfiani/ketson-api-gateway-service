@@ -9,12 +9,12 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/binding"
 	"github.com/google/uuid"
-	"github.com/nafisalfiani/ketson-go-lib/appcontext"
-	"github.com/nafisalfiani/ketson-go-lib/auth"
-	"github.com/nafisalfiani/ketson-go-lib/checker"
-	"github.com/nafisalfiani/ketson-go-lib/codes"
-	"github.com/nafisalfiani/ketson-go-lib/errors"
-	"github.com/nafisalfiani/ketson-go-lib/header"
+	"github.com/nafisalfiani/ketson-api-gateway-service/lib/appcontext"
+	"github.com/nafisalfiani/ketson-api-gateway-service/lib/auth"
+	"github.com/nafisalfiani/ketson-api-gateway-service/lib/checker"
+	"github.com/nafisalfiani/ketson-api-gateway-service/lib/codes"
+	"github.com/nafisalfiani/ketson-api-gateway-service/lib/errors"
+	"github.com/nafisalfiani/ketson-api-gateway-service/lib/header"
 	"github.com/nafisalfiani/p3-final-project/api-gateway-service/entity"
 )
 
